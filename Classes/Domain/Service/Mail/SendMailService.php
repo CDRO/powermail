@@ -428,7 +428,9 @@ class SendMailService
             'receiverEmail',
             'senderName',
             'senderEmail',
-            'subject'
+            'subject',
+            'replyToName',
+            'replyToEmail'
         ];
         foreach ($parse as $value) {
             $email[$value] = TemplateUtility::fluidParseString(
